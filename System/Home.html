@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barangay Appointment</title>
+  <link rel="stylesheet" href="sytle.css">
+  <!--Font-icon-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--js-->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.material-icons').click(function(){
+        $('ul').toggleClass('show');
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="navigation">
+    <nav>
+      <label class="logo1">BARANGAY </label><br>
+      <label class="logo2">Health Center </label>
+
+      <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="#">Contuct Us</a></li>
+      </ul>
+
+      <i class="material-icons">&#xe5d2;</i>
+    </nav>
+  </div>
+
+  <div class="content">
+    <h1 class="Welcome">Welcome to our Appointment System!</h1>
+    <img src="images/logo.png" alt="logo" width="350px" height="350px" class="logohome">
+  </div>
+
+  <div class="container-login">
+    <div class="login-form">
+        <h3>Login</h3>
+        <form id="login-form">
+            <div class="form-group">
+                <input type="text" placeholder="USERNAME /EMAIL" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="PASSWORD" id="password" name="password" required>
+            </div>
+            <a href="#" id="forgotpass">Forgot Password?</a>
+            <button type="submit" id="login-btn">Login</button>
+        </form>
+    </div>
+</div>
+
+  <script src="function.js"></script>
+</body>
+
+</html>
