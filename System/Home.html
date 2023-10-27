@@ -29,9 +29,8 @@
       <ul>
       <li><a href="#">Home</a></li>
       <li><a href="AboutUs.html">About Us</a></li>
-      <li><a href="#">Contuct Us</a></li>
+      <li><a href="ContactUs.html" id="contact-link">Contact Us</a>
       </ul>
-
       <i class="material-icons">&#xe5d2;</i>
     </nav>
   </div>
@@ -52,10 +51,50 @@
                 <input type="password" placeholder="PASSWORD" id="password" name="password" required>
             </div>
             <a href="#" id="forgotpass">Forgot Password?</a>
-            <button type="submit" id="login-btn">Login</button>
+            <button type="submit" id="login-btn">LOG IN</button>
         </form>
     </div>
-</div>
+  </div>
+
+  <div class="container-signin">
+    <div class="signin-form">
+        <h3>Register as New Account</h3>
+        <form id="signin-form">
+            <div class="form-group">
+                <input type="text" placeholder="FIRST NAME" id="firstname" name="firstame" required>
+            </div>
+            <div class="form-group">
+                <input type="input" placeholder="MIDDLE NAME" id="middlename" name="middlename" required>
+            </div>
+            <div class="form-group">
+              <input type="input" placeholder="LAST NAME" id="lastname" name="lastname" required>
+            </div>
+            <h4>BIRTH DATE</h4>
+            <div class="form-group-birthdate">
+              <input type="input" placeholder="MONTH" id="month" name="month" required>
+            </div>
+            <div class="form-group-birthdate">
+            <input type="input" placeholder="DAY" id="day" name="day" required>
+            </div>
+            <div class="form-group-birthdate">
+              <input type="input" placeholder="YEAR" id="year" name="year" required>
+            </div>
+            <div class="form-group">
+              <input type="input" placeholder="MOBILE NUMBER (09XXXXXXXXX)" id="mobilenumber" name="mobilenumber" required>
+            </div>
+            <div class="form-group">
+              <input type="input" placeholder="ENTER NEW EMAIL" id="newemail" name="newemail" required>
+            </div>
+            <div class="form-group-password">
+              <input type="input" placeholder="ENTER NEW PASSWORD" id="newpassword" name="newpassword" required>
+            </div>
+            <div class="form-group-password">
+              <input type="input" placeholder="CONFIRM NEW PASSWORD" id="confirmpassword" name="confirmpassword" required>
+            </div>
+            <button type="submit" id="signup-btn">SIGN UP</button>
+        </form>
+    </div>
+  </div>
 
   <script src="function.js"></script>
 </body>

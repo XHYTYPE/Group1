@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sytle.css">
+    <!--Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Barangay Appointment</title>
+</head>
+<body>
+    <div class="container-contact" id="contactOverlay">
+        <div class="contact-form">
+            <h3>CONTACT US</h3>
+            <i class="fa fa-times-circle" id="closeContactForm" style="font-size:24px"></i>
+            <hr style="border-color: #069952; margin-top: 20px;">
+            <form id="contact-form">
+                <div class="form-group-names">
+                    <input type="text" placeholder="FIRST NAME" id="firstname" name="firstame" required>
+                </div>
+                <div class="form-group-names">
+                    <input type="input" placeholder="LAST NAME" id="lastname" name="lastname" required>
+                </div>
+                <div class="form-group-usermobile">
+                  <input type="input" placeholder="USERNAME / EMAIL" id="username" name="username" required>
+                </div>
+                <div class="form-group-usermobile">
+                    <input type="input" placeholder="CONTACT NUMBER" id="contactnumber" name="contactnumber" required>
+                </div>
+                <h4>MESSAGE</h4>
+                <div class="text-message">
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <hr style="border-color: #069952; margin-top: 20px;">
+                <button type="submit" id="submit-btn">SUBMIT</button>
+            </form>                
+        </div>
+    </div>
+    <script src="function.js"></script>
+</body>
+</html>
