@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.navigation {
+    display:inline;
+}
+nav{
+    background-color: #020D3F;
+    height: 90px;
+    width: 100%;
+}
+.nav-logo{
+    margin: 5px 0px 5px 10px;
+    width: 70px;
+    height: 70px;
+}
+.userdash{
+    display: flex;
+}
+.sidebar{
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #020D3F;
+    width: 270px;
+    height:100vh;
+}
+.sidebar.active{
+    transition: all 0.5s;
+    width: 70px;
+}
+.sidebar.active .menu-content{
+    display: none;
+}
+.sidebar.active .link-name{
+    display: none;
+}
+.sidebar.active #menu-btn{
+    align-items: center;
+    margin: 10px 5px 10px 20px;
+}
+.menu-content{
+    font-family:Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+.menu-name{
+    margin: 10px 0px 10px 10px;
+}
+.menu{
+    padding: 0px;
+    background: #0C2078;
+}
+#menu-btn{
+    font-size: 30px;
+    margin-left: 180px;
+    margin-top: 10px;
+}
+.nav-list li{
+    position: relative;
+    height: 50px;
+    list-style: none;
+    line-height: 50px;
+    padding: 0 10px;
+    transition: all 0.4s ease;
+}
+.nav-list li:hover{
+    background-color:#069952;
+}
+.nav-list li a{
+    color: white;
+}
+.material-symbols-outlined{
+    height: 40px;
+    line-height: 50px;
+    margin: 10px 10px;
+}

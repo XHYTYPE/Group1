@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Appointment</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/profile.css">
+     <!-- box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navigation">
+        <nav>
+            <img src="images/logo.png" alt="logo" class="nav-logo">
+        </nav>
+    </div>
+    <div class="userdash">
+        <aside class="sidebar">
+            <div class="menu">
+                <div class="menu-content">
+                    <div class="menu-name">Menu</div>
+                </div>
+            <i class='bx bx-menu' id="menu-btn"></i>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="#">
+                        <span class="material-symbols-outlined">account_circle</span>
+                        <span class="link-name">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-symbols-outlined">calendar_today</span>
+                        <span class="link-name">Make an Appointment</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-symbols-outlined">list</span>
+                        <span class="link-name">Appointment List</span>
+                    </a>
+                </li>
+            </ul> 
+        </aside>
+        <main class="profile-content">
+            <div class="user-image">
+                <img src="images/user.png" id="photo">
+                <input type="file" accept="image/jpg, image/png, image/jpeg" id="file-profile">
+                <label for="file-profile" id="uploadbtn"><i class="fa fa-camera"></i></label>  
+            </div>
+            <h3 class="patients-name"> JUAN DELA CRUZ </h3>
+
+        </main>
+    </div>
+
+    <script>
+        const imgDiv = document.querySelector('.user-image');
+        const img = document.querySelector('#photo');
+        const file = document.querySelector('#file-profile');
+        const uploadbtn = document.querySelector('#uploadbtn');
+
+        let btn = document.querySelector("#menu-btn")
+        let sidebar = document.querySelector(".sidebar");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+        file.addEventListener('change', function(){
+            const chosedfile = this.files[0];
+            if(chosedfile){
+                const reader = new FileReader();
+
+                reader.addEventListener('load', function(){
+                    img.setAttribute('src', reader.result);
+                })
+                reader.readAsDataURL (chosedfile);
+            }
+        })
+    </script>
+</body>
+</html>
