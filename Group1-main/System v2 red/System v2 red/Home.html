@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barangay Appointment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/forgotpass.css">
+    <!--Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font-icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script>
+        $(document).ready(function(){
+          $('.material-icons').click(function(){
+            $('ul').toggleClass('show');
+          });
+        });
+    </script>
+
+    <style>
+        /* Add this CSS for the background image */
+        body {
+            background-image: url("images/bck.jpg"); /* Replace with your image file path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Additional CSS for the "Welcome" heading */
+    </style>
+
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div class="navigation">
+        <nav>
+            <label class="logo1">BARANGAY</label><br>
+            <label class="logo2">Health Center</label>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><h6 id="contact-btn">Contact Us</h6></li>
+                <li><a href="Login.html"><button type="submit">Login / Signup</button></a></li>
+            </ul>
+            <i class="material-icons">&#xe5d2;</i>
+        </nav>
+    </div>
+
+    <!-- contact us -->
+    <div class="container-contact" id="contactOverlay">
+        <div class="contact-form">
+
+            <h3>CONTACT US</h3>
+            <i class="fa fa-times-circle" id="closeContactForm" style="font-size:24px"></i>
+            <hr style="border-color: #069952; margin-top: 20px;">
+            <form id="contact-form">
+                <div class="form-group-names">
+                    <input type="text" placeholder="FIRST NAME" id="firstname" name="firstame" required>
+                </div>
+                <div class="form-group-names">
+                    <input type="input" placeholder="LAST NAME" id="lastname" name="lastname" required>
+                </div>
+                <div class="form-group-usermobile">
+                    <input type="input" placeholder="USERNAME / EMAIL" id="username" name="username" required>
+                </div>
+                <div class="form-group-usermobile">
+                    <input type="input" placeholder="CONTACT NUMBER" id="contactnumber" name="contactnumber" required>
+                </div>
+                <h4>MESSAGE</h4>
+                <div class="text-message">
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                    <hr style="border-color: #069952; margin-top: 20px;">
+                    <button type="submit" id="submit-btn">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+        <section class="key-features">
+            <div class="row no-margin">
+                <div class="col-lg-3 kvxol col-md-6">
+                    <div class="single-key ky-1">
+                        <i class="fas fa-hospital-alt"></i>
+                        <h5>Newest Technologies</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut erat nec leo lobortis blandit.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 kvxol  col-md-6">
+                    <div class="single-key ky-2">
+                        <i class="fas fa-user-md"></i>
+                        <h5>Experianced Doctors</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut erat nec leo lobortis blandit.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 kvxol col-md-6">
+                    <div class="single-key ky-1">
+                        <i class="fas fa-briefcase-medical"></i>
+                        <h5>High Customer Satisfaction</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut erat nec leo lobortis blandit.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 kvxol col-md-6">
+                    <div class="single-key ky-2">
+                        <i class="fas fa-capsules"></i>
+                        <h5>Pharma Pipeline</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut erat nec leo lobortis blandit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <script src="function.js"></script>
+</body>
+</html>

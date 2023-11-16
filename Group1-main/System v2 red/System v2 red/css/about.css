@@ -1,0 +1,35 @@
+/* About Us Page specific styles */
+.aboutus{
+    display: inline-block;
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: -110px;
+    margin-left: 180px;
+}
+
+.logoaboutus {
+    margin: 0px 0px 20px 0px;
+    display: inline-block;
+    padding: 140px 0px 20px 20px;
+}
+
+.title-mission {
+    margin-top: 40px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 21px;
+}
+
+.Mission {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* Add specific navigation styles for About Us page */
+
