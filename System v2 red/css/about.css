@@ -1,0 +1,49 @@
+/* About Us Page specific styles */
+.aboutus{
+    height: 90hv;
+}
+.aboutusLabel{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 90px;
+}
+.doc{
+    display: inline-block;
+    margin-left: 40px;
+}
+.aboutus-row{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+}
+.column-aboutus{
+    margin: 20px 20px 0px 20px;
+}
+.card-aboutus{
+    width: 600px;
+    background: no-repeat;
+    background-color: white;
+    transition: 0.5s;
+}
+.aboutus-card-lbl{
+    margin-top: 150px;
+    text-align: center;
+    font-weight: bold;
+    color: #000930;
+    font-size: xx-large;
+}
+.aboutus-list{
+    margin: 20px 10px 20px 80px;
+    list-style-type: circle;
+}
+@media(width <= 1080px){
+    .aboutus-card-lbl{
+        margin-top: 20px;
+    }
+}
+/* Add specific navigation styles for About Us page */
+

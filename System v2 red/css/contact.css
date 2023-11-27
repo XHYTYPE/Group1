@@ -1,0 +1,124 @@
+
+/*Contatc Us*/
+#contactOverlay{
+    display: none;
+    position:fixed;
+    top: 0;
+    z-index: 100;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-form{
+    width: 480px;
+    background-color:#020D3F;
+    padding: 30px;
+    box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, 0.40);
+}
+
+.contact-form h3{
+    display: inline;
+    margin-bottom: 10px;
+    text-align:left;
+}
+.form-group-names{
+    margin: 10px 0 10px;
+    gap: 20px;
+}
+.form-contact-name input{
+    margin-top: 20px;
+    background: rgba(255, 255, 255, .80);
+    width: 480px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 2px;
+    margin-left: 5px;
+    outline: none;
+    border: none;
+    align-items: center;
+}
+.form-contact-useremail{
+    display: inline;
+    margin: 10px 0 10px;
+    gap: 20px;
+}
+.form-contact-useremail input{
+    margin-left: 5px;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, .80);
+    width: 480px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 2px;
+    outline: none;
+    border: none;
+    align-items: center;
+}
+.fa{
+    margin-left: 340px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.contact-form h4{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+#message{
+    width: 480px;
+    height:180px;
+    background: rgba(255, 255, 255, .80);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+button{
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 3px solid #069952;
+    color: #009D52;
+    background: none;
+    border-radius: 18px;
+    margin-top: 10px;
+    margin-left: 80%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background:#069952;
+    color: white;
+    transition: 0.5s;
+}
+@media(width <= 1080px){
+    #contactOverlay{
+        display: flex;
+        justify-content: center;
+    }
+    .contact-form{
+        width: 350px;
+    }
+    #message{
+        width: 340px;
+        height:180px;
+    }
+    .fa{
+        margin-left: 210px;
+    }
+    .form-contact-name input, .form-contact-useremail input{
+        width: 330px;
+    }
+}
