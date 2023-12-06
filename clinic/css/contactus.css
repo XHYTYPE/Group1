@@ -1,0 +1,74 @@
+
+.contact_us{
+    position: relative;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.contact_inner{
+   background-color: #fff;
+   box-shadow: 20px 22px 44px #cccc;
+   border-radius: 25px;
+}
+.contact_field{
+   padding: 60px;
+}
+
+.contact_field h3{
+  color: #000;
+   font-size: 40px;
+   letter-spacing: 1px;
+   font-weight: 600;
+   margin-bottom: 10px
+}
+.contact_field p{
+   color: #000;
+   font-size: 13px;
+   font-weight: 400;
+   letter-spacing: 1px;
+   margin-bottom: 35px;
+}
+.contact_field .form-control{
+    background: rgba(255, 255, 255, .80);
+    width: 380px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 2px;
+}
+.contact_field .form-control:focus{
+   box-shadow:#2d2d2d;
+
+}
+.contact_field .form-control::placeholder{
+   font-size: 13px;
+   letter-spacing: 1px;
+}
+
+.contact_info_sec {
+   position: absolute;
+   background-color: #2d2d2d;
+   right: 1px;
+   top: 18%;
+   height: 340px;
+   width: 280px;
+   padding: 40px;
+   border-radius: 25px 0 0 25px;
+}
+.contact_info_sec h4{
+   letter-spacing: 1px;
+   padding-bottom: 15px;
+}
+
+button.contact_form_submit {
+   background:#031255;
+   border: none;
+   color: #fff;
+   padding: 10px 15px;
+   width: 100%;
+   margin-top: 25px;
+   border-radius: 35px;
+   cursor: pointer;
+   font-size: 14px;
+   letter-spacing: 2px;
+}
